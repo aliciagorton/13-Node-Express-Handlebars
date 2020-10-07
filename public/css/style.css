@@ -1,0 +1,46 @@
+.burgList {
+    padding: 3px; 
+    margin: 3px; 
+    background: #e75a08;
+  }
+  
+  .burgListDevo {
+    padding: 3px; 
+    margin: 3px; 
+    background: #a00843;
+  }
+  
+  #eatList{
+    margin: 4px; 
+  }
+  
+  ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-form {
+    padding: 3px;
+    margin: 3px;
+    background: rgb(144, 198, 248);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+  
+  .form-group {
+    margin: 5px;
+  }
+  
+  .devoBurg {
+     background: #0ac486;   
+  } 
+  
+  #burgBut {
+     background: rgb(238, 150, 223);
+  }

@@ -1,0 +1,48 @@
+
+<h1>Burgers Rule</h1>
+
+<h3>Burgers get devoured</h3>
+<h4>EAT button to move</h4>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+<li class="burgList">
+	{{burger_name}}
+</li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+<li id="eatList">
+     	<button class="devoBurg" data-id="{{id}}">
+		EAT
+	</button>
+</li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+<li class="burgListDevo">
+	{{burger_name}}
+</li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h4>Add a new burger</h4>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Burger Name:</label>
+    <input type="text" id="burg" name="name">
+  </div>
+  <button type="submit" id="burgBut">Add Burger</button>
+</form>
+
