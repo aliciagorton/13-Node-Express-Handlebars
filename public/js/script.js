@@ -4,9 +4,7 @@ $(function () {
       event.preventDefault();
   
       var newBurger = {
-        burger_name: $("#burg").val().trim(),
-        //devoured: $("[name=devoured]:checked").val().trim()
-        devoured: 0
+        burger_name: $("#burg").val().trim()
       };
       
       console.log(newBurger);
@@ -17,25 +15,30 @@ $(function () {
         data: newBurger
       }).then(
         function() {
-          console.log("created new burger");
+          console.log(`created new burger`);
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
 
-    $(".devoBurg").on("click", function(event) {
+    $(".devBurger").on("click", function(event) {
         var id = $(this).data("id");
 
-        // need to add in devour state variable
+        var confirmDev = $(this).data("neweaten") === false;
+
+        var confirmDevState = {
+            devour: confirmDev
+        };
+        console.log(`id: ${id} eaten: ${confirmDevState.devour}`);
     
         // Send the PUT request.
-        $.ajax("/api/burgers/" + id, {
+        $.ajax(`/api/burgers/${id}`, {
           type: "PUT",
-          data: true
+          data: confirmDevState
         }).then(
           function() {
-            console.log("changed devoured to true");
+            console.log(`changed confirm state to: ${confirmDev}`);
             // Reload the page to get the updated list
             location.reload();
           }
