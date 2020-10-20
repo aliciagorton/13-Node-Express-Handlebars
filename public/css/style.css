@@ -1,46 +1,73 @@
-.burgList {
-    padding: 3px; 
-    margin: 3px; 
-    background: #e75a08;
-  }
-  
-  .burgListDevo {
-    padding: 3px; 
-    margin: 3px; 
-    background: #a00843;
-  }
-  
-  #eatList{
-    margin: 4px; 
-  }
-  
-  ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-form {
-    padding: 3px;
-    margin: 3px;
-    background: rgb(144, 198, 248);
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-  }
-  
-  .form-group {
-    margin: 5px;
-  }
-  
-  .devoBurg {
-     background: #0ac486;   
-  } 
-  
-  #burgBut {
-     background: rgb(238, 150, 223);
-  }
+h1 {
+  color: rgb(207, 1, 1);
+  text-align: center;
+  margin-top: 40px;
+}
+h2 {
+  text-align: center;
+  color: rgb(216, 130, 32);
+}
+
+body {
+  background-color: rgb(141, 140, 138);
+}
+
+ul {
+  line-height: 150%;
+}
+
+.burger-container {
+  display: flex;
+}
+
+.newBurger {
+  background-color: rgb(236, 14, 14);
+  /* color: white; */
+  padding: 5px;
+  padding-left: 5%;
+  width: 50%;
+  border-radius: 20px;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.devouredBurger {
+  background-color: rgb(255, 234, 42);
+  padding: 5px;
+  padding-left: 5%;
+  width: 50%;
+  border-radius: 20px;
+  margin-right: 2%;
+}
+
+.create-form {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(229, 226, 226);
+  width: 35%;
+  padding: 15px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+#burgerName {
+  margin: auto;
+}
+
+.form-button {
+  margin: 10px;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.change-devour {
+  border: none;
+  border-radius: 3px;
+}
+button.change-devour{
+  color: black;
+  background-color: yellow;
+}

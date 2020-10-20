@@ -1,18 +1,19 @@
 // Set up MySQL connection.
-var mysql = require("mysql");
+let mysql = require("mysql");
 
-// Reviewing other's code: Why do we use a if/else with connect 
-// if (process.env.JAWSDB_URL) {
-//     connection = mysql.createConnection(process.env.JAWSDB_URL);
-// } else { }
+let connection;
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "123456",
-  database: "burgers_db"
-});
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    connection = mysql.createConnection({
+        host: 'localhost',
+        port: 3306,
+        user: 'root',
+        password: '1234',
+        database: 'burger_db'
+    });
+};
 
 // Make connection.
 connection.connect(function(err) {
