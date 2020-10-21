@@ -56,6 +56,6 @@ All the recommended files and directories from the steps above should look like 
 ### Submission:
 * GiHub Repository: https://github.com/aliciagorton/13-Node-Express-Handlebars.git
 
-* Heroku Repository:
+* Heroku Repository: https://ancient-meadow-14223.herokuapp.com/
 
 - - -
