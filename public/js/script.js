@@ -4,10 +4,13 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
+    
     var newBurger = {
+      
       burger_name: $("#burgerName").val().trim(),
     };
-
+    console.log(newBurger);
+    
     // Send the POST request.
     $.ajax("/api/burger", {
       type: "POST",
